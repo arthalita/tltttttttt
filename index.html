@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraStore - Online Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>AuraStore</h2>
+  <ul>
+    <li onclick="showSlide(0)">Home</li>
+    <li onclick="showSlide(1)">About</li>
+    <li onclick="showSlide(2)">Produk</li>
+    <li onclick="showSlide(3)">Kontak</li>
+  </ul>
+</nav>
+
+<!-- SLIDER -->
+<div class="slider">
+
+  <!-- HOME -->
+  <section class="slide active">
+    <h1>Selamat Datang di AuraStore</h1>
+    <p>Online shop terpercaya yang menyediakan produk digital dan kebutuhan kreatif untuk menunjang bisnis Anda.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="slide">
+    <h2>Tentang Kami</h2>
+    <div class="content">
+      <p><strong>Nama Usaha:</strong> AuraStore</p>
+
+      <p><strong>Latar Belakang:</strong><br>
+      AuraStore didirikan sebagai respon terhadap berkembangnya kebutuhan masyarakat akan layanan digital yang praktis, cepat, dan berkualitas. 
+      Di era modern saat ini, banyak pelaku usaha yang membutuhkan dukungan digital untuk meningkatkan daya saing mereka. 
+      Oleh karena itu, AuraStore hadir sebagai solusi dengan menyediakan berbagai produk digital yang dirancang untuk membantu bisnis berkembang lebih optimal.
+      <br><br>
+      Kami memulai usaha ini dari skala kecil dengan fokus pada kualitas layanan dan kepuasan pelanggan. Seiring waktu, AuraStore terus berkembang dan berinovasi untuk menghadirkan produk yang relevan dengan kebutuhan pasar digital saat ini.
+      </p>
+
+      <p><strong>Visi:</strong><br>
+      Menjadi online shop digital terpercaya yang memberikan solusi kreatif dan inovatif bagi pelaku usaha di Indonesia.</p>
+
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>Menyediakan produk digital berkualitas tinggi</li>
+        <li>Mendukung perkembangan bisnis pelanggan</li>
+        <li>Memberikan pelayanan yang cepat dan responsif</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section class="slide">
+    <h2>Produk Kami</h2>
+    <div class="produk-container">
+
+      <div class="card">
+        <h3>Template Website</h3>
+        <p>Template website modern siap pakai untuk bisnis online.</p>
+        <span>Rp 150.000</span>
+      </div>
+
+      <div class="card">
+        <h3>Desain Feed Instagram</h3>
+        <p>Paket desain konten Instagram profesional dan menarik.</p>
+        <span>Rp 100.000</span>
+      </div>
+
+      <div class="card">
+        <h3>Ebook Bisnis Digital</h3>
+        <p>Panduan lengkap memulai dan mengembangkan bisnis digital.</p>
+        <span>Rp 75.000</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="slide">
+    <h2>Kontak Kami</h2>
+
+    <form id="contactForm">
+      <input type="text" id="nama" placeholder="Nama" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="pesan" placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div id="hasil"></div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
